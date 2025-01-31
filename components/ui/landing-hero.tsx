@@ -3,8 +3,7 @@
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { AuroraButton } from "@/components/ui/aurora-button"
-import { Button } from "@/components/ui/button"
-import { RiWhatsappFill, RiInstagramFill, RiTwitterXFill, RiYoutubeFill } from "@remixicon/react"
+import { RiWhatsappFill } from "@remixicon/react"
 
 const words = [
   "Güvenilir",
@@ -85,20 +84,23 @@ export function LandingHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.8 }}
-          className="mt-8 flex gap-4 justify-center"
+          className="mt-8"
         >
-          <Button variant="outline" size="icon" aria-label="WhatsApp">
-            <RiWhatsappFill className="text-[#25D366] dark:text-primary" size={20} aria-hidden="true" />
-          </Button>
-          <Button variant="outline" size="icon" aria-label="Instagram">
-            <RiInstagramFill className="text-[#E4405F] dark:text-primary" size={20} aria-hidden="true" />
-          </Button>
-          <Button variant="outline" size="icon" aria-label="Twitter">
-            <RiTwitterXFill className="text-[#14171a] dark:text-primary" size={20} aria-hidden="true" />
-          </Button>
-          <Button variant="outline" size="icon" aria-label="YouTube">
-            <RiYoutubeFill className="text-[#FF0000] dark:text-primary" size={20} aria-hidden="true" />
-          </Button>
+          <a 
+            href="https://api.whatsapp.com/send?phone=905426203605&text=Merhaba,%20bilgi%20almak%20istiyorum."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block"
+          >
+            <motion.div 
+              whileHover={{ scale: 1.02 }} 
+              whileTap={{ scale: 0.98 }}
+              className="bg-[#25D366] text-white px-6 py-3 rounded-full font-medium hover:bg-[#22c55e] transition-colors flex items-center justify-center gap-2"
+            >
+              <RiWhatsappFill size={20} />
+              Chat on WhatsApp
+            </motion.div>
+          </a>
         </motion.div>
       </div>
     </div>

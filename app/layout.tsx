@@ -8,7 +8,7 @@ import MainWrapper from "@/components/main-wrapper";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ECA Elektrik",
+  title: "ECA Mühendislik",
   description: "Yüksek gerilim sistemlerinde profesyonel çözümler",
 };
 
