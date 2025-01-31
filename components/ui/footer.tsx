@@ -52,9 +52,9 @@ const Footer2 = ({
     {
       title: "İletişim",
       links: [
-        { text: "Telefon: +90 555 555 5555", url: "tel:+905555555555" },
-        { text: "E-posta: info@ecamuhendislik.com", url: "mailto:info@ecamuhendislik.com" },
-        { text: "Adres: İstanbul, Türkiye", url: "/iletisim" },
+        { text: "Telefon: +90 542 620 36 05", url: "tel:+905426203605" },
+        { text: "E-posta: info@ecayuksekgerilim.com", url: "mailto:info@ecayuksekgerilim.com" },
+        { text: "Adres: Trabzon, Türkiye", url: "/iletisim" },
       ],
     },
     {

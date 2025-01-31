@@ -8,7 +8,7 @@ const projects = [
     title: "Trafo Merkezi Modernizasyonu",
     description: "154/34.5 kV'lık trafo merkezinin modernizasyonu ve koruma sistemlerinin yenilenmesi projesi.",
     category: "Trafo Merkezi",
-    location: "İstanbul",
+    location: "Trabzon",
     year: "2023",
     details: [
       "Koruma röleleri yenileme",

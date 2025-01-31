@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { AuroraBackground } from "@/components/ui/aurora-background"
 import { Phone, Mail, MapPin, Clock, ArrowRight } from "lucide-react"
-import Link from "next/link"
+import { RiWhatsappFill } from "@remixicon/react"
 
 export default function ContactPage() {
   return (
@@ -42,8 +42,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-sm text-gray-600 dark:text-gray-400">Telefon</p>
-                    <a href="tel:+905555555555" className="text-lg font-medium text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                      +90 555 555 5555
+                    <a href="tel:+905426203605" className="text-lg font-medium text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                      +90 542 620 36 05
                     </a>
                   </div>
                 </div>
@@ -67,7 +67,7 @@ export default function ContactPage() {
                   <div>
                     <p className="text-sm text-gray-600 dark:text-gray-400">Adres</p>
                     <p className="text-lg font-medium text-gray-800 dark:text-white">
-                      İstanbul, Türkiye
+                      Trabzon, Türkiye
                     </p>
                   </div>
                 </div>
@@ -121,21 +121,17 @@ export default function ContactPage() {
 
               <div className="mt-8">
                 <p className="text-lg mb-4">
-                  Projelerimiz hakkında detaylı bilgi almak için:
+                  Hemen WhatsApp üzerinden iletişime geçin:
                 </p>
-                <Link 
-                  href="/projeler"
-                  className="block w-full"
+                <a 
+                  href="https://api.whatsapp.com/send?phone=905426203605&text=Merhaba,%20bilgi%20almak%20istiyorum."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-[#25D366] hover:bg-[#22c55e] text-white px-6 py-3 rounded-full font-medium transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98] text-center cursor-pointer flex items-center justify-center gap-2"
                 >
-                  <motion.div
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    className="w-full bg-white text-blue-600 px-6 py-3 rounded-full font-medium hover:bg-blue-50 transition-colors text-center cursor-pointer"
-                  >
-                    Projelerimizi İnceleyin
-                    <span className="inline-block ml-2">→</span>
-                  </motion.div>
-                </Link>
+                  <RiWhatsappFill size={24} />
+                  WhatsApp&apos;tan Mesaj Gönder
+                </a>
               </div>
             </motion.div>
           </div>

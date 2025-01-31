@@ -3,6 +3,8 @@
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { AuroraButton } from "@/components/ui/aurora-button"
+import { Button } from "@/components/ui/button"
+import { RiWhatsappFill, RiInstagramFill, RiTwitterXFill, RiYoutubeFill } from "@remixicon/react"
 
 const words = [
   "Güvenilir",
@@ -77,6 +79,26 @@ export function LandingHero() {
               </button>
             </motion.div>
           </Link>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.8 }}
+          className="mt-8 flex gap-4 justify-center"
+        >
+          <Button variant="outline" size="icon" aria-label="WhatsApp">
+            <RiWhatsappFill className="text-[#25D366] dark:text-primary" size={20} aria-hidden="true" />
+          </Button>
+          <Button variant="outline" size="icon" aria-label="Instagram">
+            <RiInstagramFill className="text-[#E4405F] dark:text-primary" size={20} aria-hidden="true" />
+          </Button>
+          <Button variant="outline" size="icon" aria-label="Twitter">
+            <RiTwitterXFill className="text-[#14171a] dark:text-primary" size={20} aria-hidden="true" />
+          </Button>
+          <Button variant="outline" size="icon" aria-label="YouTube">
+            <RiYoutubeFill className="text-[#FF0000] dark:text-primary" size={20} aria-hidden="true" />
+          </Button>
         </motion.div>
       </div>
     </div>
