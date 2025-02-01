@@ -4,21 +4,19 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-50 py-12 mt-12">
+    <footer className="bg-gray-50 py-12 mt-16 sm:mt-24">
       <div className="container max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* İletişim Bilgileri */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold mb-4">İletişim</h3>
             <p className="text-sm text-gray-600">
-              Adres: Örnek Mahallesi, 123. Sokak No:4
-              <br />
-              İzmir, Türkiye
+              Adres: Trabzon, Türkiye
             </p>
             <p className="text-sm text-gray-600">
-              Tel: +90 (232) 123 45 67
+              Tel: 0542 620 36 05
               <br />
-              E-posta: info@example.com
+              E-posta: info@ecamuhendislik.com
             </p>
           </div>
 

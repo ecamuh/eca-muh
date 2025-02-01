@@ -52,8 +52,8 @@ const Footer2 = ({
     {
       title: "İletişim",
       links: [
-        { text: "Telefon: +90 542 620 36 05", url: "tel:+905426203605" },
-        { text: "E-posta: info@ecayuksekgerilim.com", url: "mailto:info@ecayuksekgerilim.com" },
+        { text: "Telefon: 0542 620 36 05", url: "tel:+905426203605" },
+        { text: "E-posta: info@ecayuksekgerilim.com", url: "mailto:info@ecamuhendislik.com" },
         { text: "Adres: Trabzon, Türkiye", url: "/iletisim" },
       ],
     },

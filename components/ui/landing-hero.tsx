@@ -15,14 +15,14 @@ const words = [
 
 export function LandingHero() {
   return (
-    <div className="h-[90vh] w-full relative flex flex-col items-center justify-center">
+    <div className="h-[90vh] w-full relative flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
       <div className="relative flex flex-col items-center justify-center text-center">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 to-neutral-500 dark:from-neutral-50 dark:to-neutral-400"
+          className="text-3xl sm:text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 to-neutral-500 dark:from-neutral-50 dark:to-neutral-400"
         >
           ECA Mühendislik
           <br />
@@ -33,7 +33,7 @@ export function LandingHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="mt-4 text-2xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-blue-500 to-blue-800 dark:from-blue-300 dark:to-blue-600"
+          className="mt-4 text-xl sm:text-2xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-blue-500 to-blue-800 dark:from-blue-300 dark:to-blue-600"
         >
           {words.join(" • ")}
         </motion.div>
@@ -42,7 +42,7 @@ export function LandingHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
-          className="mt-8 text-lg md:text-xl text-neutral-700 dark:text-neutral-300 max-w-2xl mx-auto px-4"
+          className="mt-6 sm:mt-8 text-base sm:text-lg md:text-xl text-neutral-700 dark:text-neutral-300 max-w-2xl mx-auto px-2 sm:px-4"
         >
           Yüksek gerilim sistemlerinde 20+ yıllık deneyim ile güvenilir, verimli ve sürdürülebilir çözümler sunuyoruz.
         </motion.p>

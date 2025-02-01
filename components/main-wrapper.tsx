@@ -15,8 +15,8 @@ export default function MainWrapper({
   }
   
   return (
-    <div className="min-h-screen">
-      <div className="mt-20">
+    <div className="min-h-[calc(100vh-20rem)]">
+      <div className="mt-20 pb-16 sm:pb-24">
         {children}
       </div>
     </div>
